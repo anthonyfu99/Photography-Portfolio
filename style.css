@@ -1,0 +1,184 @@
+
+.work img{
+    max-width: 100%;
+}
+
+.about-meat img{
+    max-width: 50%;
+}
+
+.fs-4{
+    font-weight: bolder; 
+}
+
+.book-me{
+    background-color: rgb(255, 252, 163);
+    border-radius: 10px;
+    height: 42px;   
+    margin-right: 20px;  
+}                          
+
+.nav a{
+    color: black;
+}
+
+.nav-bar{
+    padding-left: 40px;
+    padding-right: 75px;
+}
+
+.work{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 100px;
+    padding-top: 0%; 
+}
+
+.carousel img{
+    height: 650px;
+    object-fit: cover;
+}
+
+.about-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-size: 23px;   
+}
+
+.slide-1{
+    object-position: 50% 43%;
+}
+
+.slide-2{
+    object-position: 50% 30%;
+}
+
+.graduation-photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 300px;
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+.graduation-photos img{
+    max-width: 100%;
+}   
+
+.graduation-heading{
+    text-align: center;
+    padding: 30px;
+    padding-top: 0;
+}
+
+.portrait-heading{
+    text-align: center;
+    padding: 30px;
+    padding-top: 0;
+}
+
+.portrait-photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 100px;
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+.portrait-photos img{
+    max-width: 100%;
+}
+
+.city-photos{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 240px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    padding-left: 600px;
+}
+
+.city-photos img{
+    max-width: 100%;
+}
+
+.city-heading{
+    text-align: center;
+    padding: 30px;
+    padding-top: 0;
+}
+
+.city-photos1{
+    grid-row: span 2;
+}
+
+.cityphoto3{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.horizontal{
+    width: 394px;
+}
+
+.event-heading{
+    text-align: center;
+    padding: 30px;
+    padding-top: 0;
+}
+
+.event-photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 100px;
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+.event-photos img{
+    max-width: 100%;
+}
+
+.booking-text{
+    text-align: center;
+}
+
+
+@media (max-width: 1250px) {
+    .work{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .graduation-photos{
+        grid-template-columns: 1fr;
+        gap: 10px
+    }
+
+    .city-photos{
+        grid-template-columns: 1fr;
+        gap: 10px
+    }
+
+    .portrait-photos{
+        grid-template-columns: 1fr;
+        gap: 10px
+    }
+
+    .event-photos{
+        grid-template-columns: 1fr;
+        gap: 10px
+    }
+}
+
+
+
+
