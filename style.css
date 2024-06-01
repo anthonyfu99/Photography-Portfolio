@@ -228,6 +228,14 @@
     .work{
         padding: 10px;
     }
+
+    .event-photos{
+        padding: 35px;
+    }
+
+    .portrait-photos{
+        padding: 35px;
+    }
 }
 
 @keyframes fade-down{
