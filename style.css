@@ -1,0 +1,272 @@
+.work img{
+    max-width: 100%;
+}
+
+.about-meat img{
+    max-width: 50%;
+}
+
+.fs-4{
+    font-weight: bolder; 
+}
+
+.book-me{
+    background-color: rgb(255, 252, 163);
+    border-radius: 10px;
+    height: 42px;   
+    margin-right: 20px;  
+}                          
+
+.nav a{
+    color: black;
+}
+
+.nav-bar{
+    padding-left: 40px;
+    padding-right: 75px;
+}
+
+.genre{                    /* hover blur */
+    position: relative;
+}
+
+.overlay{
+    position: absolute;     
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);    
+    color: #ffffff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.35s;  
+    backdrop-filter: blur(5px);
+}
+
+.overlay:hover{
+    opacity: 1;
+}                    /* hover blur */
+
+#overlay_content{
+    font-size: 40px;
+}
+
+.work{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 100px;
+    padding-top: 0%; 
+}
+
+.carousel img{
+    height: 650px;
+    object-fit: cover;
+}
+
+.about-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-size: 23px;   
+}
+
+.slide-1{
+    object-position: 50% 43%;
+}
+
+.slide-2{
+    object-position: 50% 30%;
+}
+
+.graduation-photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 300px;
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+.graduation-photos img{
+    max-width: 100%;
+}   
+
+.graduation-heading{
+    text-align: center;
+    padding: 30px;
+    padding-top: 0;
+}
+
+.portrait-heading{
+    text-align: center;
+    padding: 30px;
+    padding-top: 0;
+}
+
+.portrait-photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 100px;
+    padding-top: 0;
+    padding-bottom: 80px;
+}
+
+.portrait-photos img{
+    max-width: 100%;
+}
+
+.city-photos{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 240px;
+    padding-top: 0;
+    padding-bottom: 50px;
+    padding-left: 600px;
+}
+
+.city-photos img{
+    max-width: 100%;
+}
+
+.city-heading{
+    text-align: center;
+    padding: 30px;
+    padding-top: 0;
+}
+
+.city-photos1{
+    grid-row: span 2;
+}
+
+.cityphoto3{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.horizontal{
+    width: 394px;
+}
+
+.event-heading{
+    text-align: center;
+    padding: 30px;
+    padding-top: 0;
+}
+
+.event-photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 100px;
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+.event-photos img{
+    max-width: 100%;
+}
+
+.booking-text{
+    text-align: center;
+    padding-bottom: 700px;
+}
+
+#footer{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+    font-size: 12px;
+    align-items: center;
+}
+
+
+@media (max-width: 1250px) {
+    .work{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .graduation-photos{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .city-photos{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .portrait-photos{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .event-photos{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 892px){
+    .graduation-photos{
+        padding: 10px;
+    }
+    .city-photos{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .work{
+        padding: 10px;
+    }
+}
+
+@keyframes fade-down{
+    0% {
+        opacity: 0;
+        transform: translateY(-90px) scale(0.5);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+img{
+    cursor: pointer; /* when hovering over an image, the cursor turns into a finger to show that the image can be clicked and interacted wtih*/
+}  
+
+.popup {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#transition{
+    animation: fade-down 1s ease-out forwards;
+}
+
+
