@@ -9,24 +9,17 @@
 </head>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <body>
-    <section class="nav-bar">    
-        <div class="container-fluid">
-            <header class="d-flex flex-wrap justify-content-center py-5">
-            <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none home-button">
-                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                <span class="fs-4">Futography</span>
-            </a>
-            <ul class="nav nav-pills">
-                <li class="nav-item book-me"><a href="./booking.html" class="nav-link">Booking</a></li> 
-                <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>      
-            </ul>
-            </header>           
+    <header class="header">    
+        <div>
+            <a href="./index.html"><span>Futography</span></a>
+            <a class="booking-header" href="./booking.html"><span>Booking</span></a>
+            <a class="about-header" href="./about.html"><span>About</span></a>
         </div>
-    </section>
+    </header>
 
     <h1 class="event-heading">Event</h1>
 
-    <div class="event-photos">
+    <main class="event-photos">
         <div class="event-image-1">
             <img id="transition" src="./photos/Event_Photos/Event1.jpg">
         </div>
@@ -38,13 +31,13 @@
         <div class="event-image-3">
             <img id="transition" src="./photos/Event_Photos/Event3.jpg"> 
         </div>
+    </main>
 
-    </div>
-    <section>
+    <footer>
         <div id="footer">
             <p>Designed and coded by Anthony Fu</p>
         </div>
-    </section>
+    </footer>
 
     <div id="popup" class="popup">
         <img src="" alt="Popup Image" class="popup-img">

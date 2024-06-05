@@ -1,3 +1,19 @@
+.header{
+    padding: 50px;
+}
+
+.header a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.booking-header, .about-header{
+    float: right;
+    margin-left: 45px;
+}
+
 .work img{
     max-width: 100%;
 }
@@ -16,15 +32,6 @@
     height: 42px;   
     margin-right: 20px;  
 }                          
-
-.nav a{
-    color: black;
-}
-
-.nav-bar{
-    padding-left: 40px;
-    padding-right: 75px;
-}
 
 .genre{                    /* hover blur */
     position: relative;
@@ -181,8 +188,7 @@
 
 #footer{
     display: flex;
-    justify-content: flex-end;
-    padding-right: 100px;
+    justify-content: center;
     font-size: 12px;
     align-items: center;
 }
@@ -213,11 +219,25 @@
         grid-template-columns: 1fr;
         gap: 10px;
     }
+    .about-text{
+        padding: 50px;
+        font-size: 100%;
+    }
+    .booking-text{
+        padding: 50px;
+        font-size: 100%;
+    }
+    .header span{
+        font-size: 85%;
+    }
+    .booking-header, .about-header{
+        margin-left: 20px;
+    }
 }
 
 @media (max-width: 892px){
     .graduation-photos{
-        padding: 10px;
+        padding: 50px;
     }
     .city-photos{
         padding: 10px;
